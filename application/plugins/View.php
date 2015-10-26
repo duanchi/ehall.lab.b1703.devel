@@ -42,8 +42,8 @@ class ViewPlugin extends Yaf\Plugin_Abstract {
 													        ]
                                                         )
         );*/
-		Yaf\Dispatcher::getInstance()->setView(\CORE\INSTANCE::get('View'));
-		\CORE\INSTANCE::get('View')->setRequest([
+		Yaf\Dispatcher::getInstance()->setView(\Util\INSTANCE::get('View'));
+		\Util\INSTANCE::get('View')->setRequest([
 													'module'                =>  $request->module,
 													'controller'            =>  $request->controller,
 													'action'                =>  $request->action,
